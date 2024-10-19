@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Arun Baghel</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/fdbcfc347b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header start -->
+    <div id="header">
+      <video autoplay muted loop id="bgVideo">
+        <source src="/static/pc.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video autoplay muted loop id="bgVideoSmall" style="display: none">
+        <source src="/static/phone.mp4" type="video/mp4" />
+        <!-- Use your smaller screen video -->
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <nav>
+          <img src="./static/logo.png" class="logo" alt="Logo" />
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I am <span>ARUN BAGHEL</span><br />from India</h1>
+          <p>JAVA Full Stack Developer | Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- header ends -->
+    <!-- about start -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/static/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              B.Tech (CSE) graduate from RGPV University with hands-on
+              experience in academic and internship projects, skilled in
+              front-end and back-end technologies. Specialising in building
+              scalable, responsive, and interactive web applications.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development Technologies</span>
+                  <ul>
+                    <li>JavaScript, HTML, CSS</li>
+                    <li>React.js, Bootstrap, built-in library</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Backend Technologies</span>
+                  <ul>
+                    <li>Java</li>
+                    <li>Integrating dynamic REST APIs</li>
+                    <li>Spring Boot</li>
+                    <li>MySQL</li>
+                    <li>Spring MVC</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.Tech </span><br />
+                  Computer Science Engineering <i>( 2020 - 2024 ) </i><br />
+                  Shri Rawatpura Sarkar Institute of Technology & Science Datia
+                  M.P. <br />cgpa: 8.03
+                </li>
+                <li>
+                  <span>Higher Secondary (10+2) </span><br />
+                  MP Board <i>( 2019 - 2020 )</i><br />
+                  B.S.F. Public School Tekanpur, Gwalior M.P. <br />percentage:
+                  81%
+                </li>
+                <li>
+                  <span>High School (10)</span><br />
+                  MP Board <i>( 2017 - 2018 )</i><br />
+                  B.S.F. Public School Tekanpur, Gwalior M.P. <br />percentage:
+                  79%
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Front-End</span><br />
+                  Internship at CETPA Infotech Pvt Ltd Noida<br />
+                  Created responsive web pages
+                </li>
+                <li>
+                  <span>Back-End</span><br />
+                  Internship at CETPA Infotech Pvt Ltd Noida<br />
+                  Integrated dynamic REST APIs
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about ends -->
+    <!-- service start -->
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Offering custom web design solutions that combine creativity with
+              functionality to create visually appealing, user-friendly
+              websites. Specializing in responsive layouts, modern design
+              principles, and seamless user experiences, I aim to help
+              businesses establish a strong online presence.
+            </p>
+            <a href="">Lean More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java development</h2>
+            <p>
+              Providing robust Java development services with expertise in
+              building scalable, secure, and high-performance applications.
+              Skilled in backend development using Java and Spring Boot to
+              deliver efficient and reliable software solutions
+            </p>
+            <a href="">Lean More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service ends -->
+    <!-- projects start -->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="/static/multishop.png" alt="" />
+            <div class="layer">
+              <h3>Multi-Shop</h3>
+              <p>
+                Developed a dynamic multi-shop e-commerce platform that allows
+                users to browse and purchase products from various vendors.
+                Integrated with advanced search, filtering, and secure payment
+                features for a seamless shopping experience.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/static/crud.png" alt="" />
+            <div class="layer">
+              <h3>CRUD application</h3>
+              <p>
+                A dynamic CRUD application built with React that allows users to
+                create, read, update, and delete items effortlessly.This
+                React-based CRUD application enables users to manage data
+                effectively through intuitive forms and real-time updates.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- projects ends -->
+    <!-- contact starts -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>arunbaghelcode@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+91 9617559148</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/arun-baghel-690421222/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Aruncodex"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/arunbaghel_07/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://web.whatsapp.com/">
+                <i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
+            <a href="/static/ArunResume (2).pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="name"
+                placeholder="enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="enter your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="8"
+                placeholder="your message"
+              ></textarea>
+              <button type="submit" class="btn btn3">submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Arun made with <i class="fa-solid fa-heart"></i> by arun
+          baghel
+          <span
+            ><a href="#" class="btn"><i class="fa fa-angle-double-up"></i></a
+          ></span>
+        </p>
+      </div>
+    </div>
+    <!-- contact ends -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
